@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195220353899",
+    "project_id": "yen-id",
+    "storage_bucket": "yen-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195220353899:android:7b617fdef3815e2ab5922e",
+        "android_client_info": {
+          "package_name": "com.maiqmaliq.yen_id"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195220353899-bnj3h7fiiqjb4f6jo5k2669t1i5mopnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxgLz0XaKIsQA1sqOGbmZP4LlMjxB5Yrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195220353899-bnj3h7fiiqjb4f6jo5k2669t1i5mopnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
