@@ -57,7 +57,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(height: 20,),
-                const Text('Yen-ID',style: TextStyle(color: Colors.white,fontSize: 36,fontWeight: FontWeight.w600),),
+                const Text('Img-Uploader',style: TextStyle(color: Colors.white,fontSize: 36,fontWeight: FontWeight.w600),),
                 Card(
                   elevation: 20,
                   shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),

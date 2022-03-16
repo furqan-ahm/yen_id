@@ -21,11 +21,36 @@ class StorageService{
 
     var pickedImage=await ImagePicker.platform.getImage(source: ImageSource.gallery);
 
+    if(pickedImage==null)return 'not_picked';
 
-    await _storage.ref('ProfilePics').child(uid).putFile(File(pickedImage!.path));
+    await _storage.ref('ProfilePics').child(uid).putFile(File(pickedImage.path));
 
     return _storage.ref('ProfilePics').child(uid).getDownloadURL();
   }
+
+  Future<String> uploadImageFromCamera(String uid,int currentNum) async {
+
+    var pickedImage=await ImagePicker.platform.getImage(source: ImageSource.camera);
+
+    if(pickedImage==null)return 'not_picked';
+
+    await _storage.ref(uid).child(currentNum.toString()).putFile(File(pickedImage.path));
+
+    return _storage.ref(uid).child(currentNum.toString()).getDownloadURL();
+  }
+
+  Future<String> uploadImageFromGallery(String uid,int currentNum)async{
+
+    var pickedImage=await ImagePicker.platform.getImage(source: ImageSource.gallery);
+
+    if(pickedImage==null)return 'not_picked';
+
+    await _storage.ref(uid).child(currentNum.toString()).putFile(File(pickedImage.path));
+
+    return _storage.ref(uid).child(currentNum.toString()).getDownloadURL();
+  }
+
+
 
 
 }

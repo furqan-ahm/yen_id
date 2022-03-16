@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(height: 20,),
-                const Text('Yen-ID',style: const TextStyle(color: Colors.white,fontSize: 36,fontWeight: FontWeight.w600),),
+                const Text('Img-Uploader',style: const TextStyle(color: Colors.white,fontSize: 36,fontWeight: FontWeight.w600),),
                 Card(
                   elevation: 20,
                   shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
@@ -68,7 +68,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: loading?Center(child: CircularProgressIndicator(),):Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Image.asset('assets/yenID.png',height: 150,width: 150,),
+                        Icon(Icons.camera,size: 150,color: Colors.teal,),
+                        //Image.asset('assets/yenID.png',height: 150,width: 150,),
                         TextFormField(
                           controller: emailController,
                           decoration: inputdec.copyWith(

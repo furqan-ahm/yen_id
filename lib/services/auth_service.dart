@@ -8,6 +8,9 @@ class AuthService{
   static String _temp='';
 
 
+  getUserID(){
+    return _auth.currentUser!.uid;
+  }
 
   userModel? _getUser(User? user){
     return user!=null?userModel(user: user,userId: user.uid,displayName: user.displayName??_temp,photoUrl: user.photoURL):null;
